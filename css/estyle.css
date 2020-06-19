@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(228, 208, 208);
+}
+/* ----------------------------------------------------------------------------CABEÇALHO---------------------------------------------------------------- */
+.header{
+    border-radius: 50px;
+    margin-top: 5px;
+    text-align: center;
+}
+#logo{
+    max-width:300px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+}
+#logotipo{
+    max-width:300px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+
+
+/* ---------------------------------------------------------------------DIV1--LOGIN-------------------------------------------------------------------------- */
+.div1{
+    background-color: rgba(66, 12, 216, 0.521);
+    height: 100%;
+    border-radius: 50px;
+    text-align: center;
+    height: 400px;
+    margin-bottom: 40px;
+}
+.login_link{
+    color: rgb(90, 231, 224);
+}
+#user_image {
+    max-width:30px;
+    max-height:30px;
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* ---------------------------------------------------------------------------CAROUSEL--DIV2------------------------------------------------------------------ */
+#div2{
+    background-color: rgba(66, 12, 216, 0.521);
+    border-radius: 50px;
+    text-align: center;
+    height: 400px;
+    margin-bottom: 40px;
+}
+.carousel{
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+
+/* ----------------------------------------------------------------------MODALS------------------------------------------------------------- */
+
+.modal{
+    background-color: rgba(66, 12, 216, 0.521);
+}
+.modal-body{
+    background-color: black;
+}
+
+/* ----------------------------------------------------------------------FOOTER----------------------------------------------------------------------- */
+/* .footer{
+    height: 50px;
+} */
+
+#form_search{
+    position: relative;
+    left: 155%;
+}
+#input_search{
+    background-color: rgb(227, 236, 241);
+    border-bottom-right-radius: 50px;
+}
+#button_search{
+    border-top-left-radius: 50px;
+}
+#cps{
+    max-width:300px;
+    max-height:40px;
+    width: auto;
+    height: auto;
+}
