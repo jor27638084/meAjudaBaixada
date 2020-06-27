@@ -1,0 +1,260 @@
+<!-- AS IMAGENS DE LOGO E DOS CARROUSSÉIS FORAM ESCOLHIDAS SOMENTE PARA PREENCHER CONTEÚDOS
+A IDÉIA DO CARROUSEL É OFERECER AO USUÁRIO ATRAVÉS DE IMAGENS SIMPLES OS SERVIÇOS OFERECIDOS PELO ME AJUDA BAIXADA
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Me Ajuda Baixada</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap4.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/estyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- ---------------------------CABEÇALHO--------------------------------- -->
+            <div class="header">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/logo.png" id="logo" alt="">
+                    </div>
+                    <div class="col-9">
+                        <img src="img/logotipo.png" id="logotipo" alt="">
+                    </div>
+                </div>
+            </div>
+
+        <!-- -------------------------------CORPO----------------------------------------------- -->
+            <div class="row">
+                <!-- MELHORIAS :
+                PRECISO ARRUMAR UM JEITO DE POSICIONAR OS BOTÕES ABAIXO DOS CARROUSSEIS DE MODO FIXO
+            PRA QUE ELES NÃO SE MOVIMENTEM COM A MUDANÇA DE IMAGENS -->
+
+                 <!-- -------------------------------------CAROUSEL1------------------------------------------ -->
+
+                 
+
+                <div class="col-md-5 div1" id="div1">
+                    <div class="carousel carousel_tela_2 slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/1.png" alt="" id="tela_dois_1" class="d-block  img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/2.png" alt="" id="tela_dois_2" class="d-block  img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/3.png" alt="" id="tela_dois_3" class="d-block  img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-outline-warning btn" data-toggle="modal" data-target="#modal_2">Você Deseja Ser Parceiro</button>
+                   </div>
+                   <div class="col-md-1"></div>
+                
+                <div class="col-md-5" id="div2">
+                    <!-- -------------------------------------CAROUSEL2------------------------------------------ -->
+                    <div class="carousel carousel_tela_2 slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/1.png" alt="" id="tela_dois_4" class="d-block  img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/2.png" alt="" id="tela_dois_5" class="d-block  img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/3.png" alt="" id="tela_dois_6" class="d-block  img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-outline-light btn" data-toggle="modal" data-target="#modal">Ajuda para Você ou Para Alguem</button>
+                </div>
+            </div>
+        </div>
+            
+        </div><!-- fechamento da div container --><!-- fechamento da div container --><!-- fechamento da div container -->
+
+
+        <!-- ---------------------------------------------------------NAVBAR FOOTER------------------------------------------------------------------------- -->
+        
+        <!-- MELHORIAS :
+                POSICIONAR O FORM DE PESQUISA NO CANTO INFERIOR DIREITO -->
+        
+        <nav class="navbar fixed-bottom footer navbar-expand-lg navbar-dark bg-dark">
+            <a href="https://www.cps.sp.gov.br/" target="new-target" class="navbar-brand"><img src="img/cps.png" id="cps" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="support_navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link ">1 <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <form action="" id="form_search" class="relative form-inline my-2 my-lg-0">
+                        <input type="search" name="" id="input_search" class="form-control mr-sm-2">
+                        <button type="submit" id="button_search" class="btn btn-outline-danger my-2 my-sm-0">
+                            Pesquisar
+                        </button>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+<!-- ---------------------------------------------------------MODAL---CADASTRO--2ªETEPA SOLICITANTE--------------------------------------------------------------------------------- -->
+        <div class="modal fade" id="modal" tabindex="1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Cadastro Solicitante</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="fechar">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <fieldset>>
+                            
+                                <label for="">Endereço:</label>
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text" id="">Rua:</span>                     
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text" id="">Numero:</span>                     
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Bairro</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Ponto de Referência</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">CEP</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Cidade</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Estado</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+
+                                <label for="">Contato:</label>
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Tel 1:</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Tel 2:</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                            </fieldset>
+                        </form> 
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secundary" type="button" data-dismiss="modal" aria-label="fechar">Cancelar</button>
+                        <button class="btn btn-warning" type="submit">Terminar Cadastro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- ---------------------------------------------------------MODAL---CADASTRO 2ªETAPA PARCEIRO----------------------------------------------------------------------------------- -->
+        <div class="modal fade" id="modal_2" tabindex="1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Cadastro Parceiro</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="fechar">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <form action="">
+                            <fieldset>
+                                <label for="">Endereço:</label>
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text" id="">Rua:</span>                     
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text" id="">Numero:</span>                     
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Bairro</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Ponto de Referência</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">CEP</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Cidade</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Estado</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+
+                                <label for="">Contato:</label>
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Tel 1:</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Tel 2:</span>
+                                    </div>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secundary" type="button" data-dismiss="modal" aria-label="fechar">Cancelar</button>
+                        <button class="btn btn-warning" type="submit">Terminar Cadastro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </body><!-- fechamento tag body --><!-- fechamento tag body --><!-- fechamento tag body --><!-- fechamento tag body --><!-- fechamento tag body -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap4.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/action.js"></script>
+</html> 
