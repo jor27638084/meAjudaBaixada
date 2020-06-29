@@ -1,4 +1,6 @@
-<!-- AS IMAGENS DE LOGO E DOS CARROUSSÉIS FORAM ESCOLHIDAS SOMENTE PARA PREENCHER CONTEÚDOS
+<!-- 
+    NÃO TENHO NOÇÃO ALGUMA DE DESIGN, RESSALTO QUE AS CORES NÃO SÃO DEFINITIVAS
+    AS IMAGENS DE LOGO E DOS CARROUSSÉIS FORAM ESCOLHIDAS SOMENTE PARA PREENCHER CONTEÚDOS
 A IDÉIA DO CARROUSEL É OFERECER AO USUÁRIO ATRAVÉS DE IMAGENS SIMPLES OS SERVIÇOS OFERECIDOS PELO ME AJUDA BAIXADA
  -->
 
@@ -28,48 +30,35 @@ A IDÉIA DO CARROUSEL É OFERECER AO USUÁRIO ATRAVÉS DE IMAGENS SIMPLES OS SER
 
         <!-- -------------------------------CORPO----------------------------------------------- -->
             <div class="row">
-                <!-- MELHORIAS :
-                PRECISO ARRUMAR UM JEITO DE POSICIONAR OS BOTÕES ABAIXO DOS CARROUSSEIS DE MODO FIXO
-            PRA QUE ELES NÃO SE MOVIMENTEM COM A MUDANÇA DE IMAGENS -->
 
-                 <!-- -------------------------------------CAROUSEL1------------------------------------------ -->
+                <!-- A ideia é na div 1 oferecer ajuda a um dependente
+                na div2 oferecer ajuda à propria pessoa que está usando o serviço no momento e 
+                na div3 oferecer ajuda a um amigo -->
 
-                 
+                 <!-- -------------------------------------div1------------------------------------------ -->
 
-                <div class="col-md-5 div1" id="div1">
-                    <div class="carousel carousel_tela_2 slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/1.png" alt="" id="tela_dois_1" class="d-block  img-fluid">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/2.png" alt="" id="tela_dois_2" class="d-block  img-fluid">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/3.png" alt="" id="tela_dois_3" class="d-block  img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn-outline-warning btn" data-toggle="modal" data-target="#modal_2">Você Deseja Ser Parceiro</button>
+                <div class="col-md-3 div1" id="div1">
+                    <button class="btn-outline-warning btn" data-toggle="modal" data-target="#modal_2">Indicar um Dependente</button>
                    </div>
+
                    <div class="col-md-1"></div>
+
+                    <!-- -------------------------------------div2------------------------------------------ -->
+
+                   <div class="col-md-3 div1" id="div2">
+                    
+                    <button class="btn-outline-warning btn" data-toggle="modal" data-target="#modal_3">??????????</button>
+                   </div>
+                   
+                <div class="col-md-1"></div>
                 
-                <div class="col-md-5" id="div2">
-                    <!-- -------------------------------------CAROUSEL2------------------------------------------ -->
+                 <!-- -------------------------------------div3------------------------------------------ -->
+
+                <div class="col-md-3" id="div3">
                     <div class="carousel carousel_tela_2 slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/1.png" alt="" id="tela_dois_4" class="d-block  img-fluid">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/2.png" alt="" id="tela_dois_5" class="d-block  img-fluid">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/3.png" alt="" id="tela_dois_6" class="d-block  img-fluid">
-                            </div>
-                        </div>
+                        
                     </div>
-                    <button class="btn-outline-light btn" data-toggle="modal" data-target="#modal">Ajuda para Você ou Para Alguem</button>
+                    <button class="btn-outline-light btn" data-toggle="modal" data-target="#modal">Ajudar um Amigo</button>
                 </div>
             </div>
         </div>
@@ -102,71 +91,69 @@ A IDÉIA DO CARROUSEL É OFERECER AO USUÁRIO ATRAVÉS DE IMAGENS SIMPLES OS SER
                 </ul>
             </div>
         </nav>
-<!-- ---------------------------------------------------------MODAL---CADASTRO--2ªETEPA SOLICITANTE--------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
         <div class="modal fade" id="modal" tabindex="1" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4>Cadastro Solicitante</h4>
+                        <h4>Ajude um Amigo: </h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="fechar">
                             &times;
                         </button>
                     </div>
                     <div class="modal-body">
                         <form action="">
-                            <fieldset>>
-                            
-                                <label for="">Endereço:</label>
-                                <div class="input-group input-group-sm mb-3">
-                                    <div class="input-group-prepend ">
-                                        <span class="input-group-text" id="">Rua:</span>                     
+                                <fieldset>
+                                    <legend style="color: white;">Digite os dados do amigo que precisa de ajuda</legend>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Nome e sobrenome</span>
+                                        </div>
+                                        <input type="text" name="name_friend" id="name_friend" class="form-control">
                                     </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                    <div class="input-group-prepend ">
-                                        <span class="input-group-text" id="">Numero:</span>                     
+                                    
+                                    <!-- Input Contato -->
+                                    <label for="contato">Contato:</label>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Telefone</span>                                           
+                                        </div>
+                                        <input type="text" name="contato" id="contato" class="form-control">
                                     </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                </div>
-                                <div class="input-group input-group-sm mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Bairro</span>
-                                    </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Ponto de Referência</span>
-                                    </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">CEP</span>
-                                    </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                </div>
-                                <div class="input-group input-group-sm mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Cidade</span>
-                                    </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                </div>
-                                <div class="input-group input-group-sm mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Estado</span>
-                                    </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                </div>
 
-                                <label for="">Contato:</label>
-                                <div class="input-group input-group-sm mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Tel 1:</span>
+                                    
+                                    <!-- Input Rua e Numero Endereço -->
+                                    <label for="adress">Endereço</label>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="">Rua:</span>                                       
+                                        </div>
+                                        <input type="text" name="" id="" class="form-control">
+                                        <div class="input-group-prepend ">
+                                            <span class="input-group-text" id="">N:</span>                     
+                                        </div>
+                                        <input type="text" name="" id="" class="form-control">
                                     </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Tel 2:</span>
+
+                                    <label for="contato">Tipo de Ajuda:</label>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Categoria</span>                                           
+                                        </div>
+                                        <select name="" id="" class="form-control">
+                                            <option value="0">Escolha o Tipo de ajuda que seu amigo precisa:</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
                                     </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                </div>
-                            </fieldset>
-                        </form> 
+                                    <div class="input-group">
+                                        <div class="input-group-prepend" data-toggle="tooltip" data-placement="top">
+                                          <span class="input-group-text">Digite:</span>
+                                        </div>
+                                        <textarea class="form-control" aria-label="With textarea" placeholder="Descreva as dificuldades de seu amigo."></textarea>
+                                      </div>
+                            </form>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secundary" type="button" data-dismiss="modal" aria-label="fechar">Cancelar</button>
@@ -176,69 +163,71 @@ A IDÉIA DO CARROUSEL É OFERECER AO USUÁRIO ATRAVÉS DE IMAGENS SIMPLES OS SER
             </div>
         </div>
 
-<!-- ---------------------------------------------------------MODAL---CADASTRO 2ªETAPA PARCEIRO----------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
         <div class="modal fade" id="modal_2" tabindex="1" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4>Cadastro Parceiro</h4>
+                        <h4>Cadastro de Dependente</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="fechar">
                             &times;
                         </button>
                     </div>
                     <div class="modal-body">
-                        
                         <form action="">
                             <fieldset>
-                                <label for="">Endereço:</label>
-                                <div class="input-group input-group-sm mb-3">
-                                    <div class="input-group-prepend ">
-                                        <span class="input-group-text" id="">Rua:</span>                     
-                                    </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                    <div class="input-group-prepend ">
-                                        <span class="input-group-text" id="">Numero:</span>                     
-                                    </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                </div>
+                                <legend style="color: white;">Digite os Dados do Dependente:</legend>
                                 <div class="input-group input-group-sm mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">Bairro</span>
+                                        <span class="input-group-text">Nome e sobrenome</span>
                                     </div>
-                                    <input type="text" name="" id="" class="form-control">
+                                    <input type="text" name="name_friend" id="name_friend" class="form-control">
+                                </div>                                                                       
+                                <div class="input-group input-group-sm mb-3"  ">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">Ponto de Referência</span>
+                                        <span class="input-group-text">Data de Nascimento</span>                                           
                                     </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">CEP</span>
-                                    </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                </div>
-                                <div class="input-group input-group-sm mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Cidade</span>
-                                    </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                </div>
-                                <div class="input-group input-group-sm mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Estado</span>
-                                    </div>
-                                    <input type="text" name="" id="" class="form-control">
+                                    <input type="date" name="" id="" class="form-control">
                                 </div>
 
-                                <label for="">Contato:</label>
+                                
+                                <!-- Input Rua e Numero Endereço -->
+                                
                                 <div class="input-group input-group-sm mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">Tel 1:</span>
+                                        <span class="input-group-text" id="">CPF:</span>                                       
                                     </div>
-                                    <input type="text" name="" id="" class="form-control">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Tel 2:</span>
-                                    </div>
-                                    <input type="text" name="" id="" class="form-control">
+                                    <input type="text" name="cpf" id="cpf" class="form-control">
+                                    
                                 </div>
+                            
+                                <div class="form-group">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Nome do Solicitante:</span>
+                                        </div>
+                                        <input type="text" name="solicitante" id="solicitante" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Categoria</span>                                           
+                                    </div>
+                                    <select name="" id="" class="form-control">
+                                        <option value="0">Escolha o Tipo de ajuda que seu dependente precisa:</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group">
+                                    <div class="input-group-prepend" data-toggle="tooltip" data-placement="top">
+                                      <span class="input-group-text">Digite:</span>
+                                    </div>
+                                    <textarea class="form-control" aria-label="With textarea" placeholder="Descreva as dificuldades de seu amigo."></textarea>
+                                  </div>
                             </fieldset>
                         </form>
                     </div>
@@ -257,4 +246,9 @@ A IDÉIA DO CARROUSEL É OFERECER AO USUÁRIO ATRAVÉS DE IMAGENS SIMPLES OS SER
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap4.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/action.js"></script>
+    <script>
+            $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </html> 
