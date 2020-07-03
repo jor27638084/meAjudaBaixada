@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(228, 208, 208);
+   background-color: rgb(0, 72, 12);
 }
 /* ----------------------------------------------------------------------------CABEÇALHO---------------------------------------------------------------- */
 .header{
@@ -22,15 +22,24 @@ body{
 
 
 
-/* ---------------------------------------------------------------------DIV1--LOGIN-------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------DIV1--DIV2-------------------------------------------------------------------------- */
 .div1{
-    background-color: rgba(66, 12, 216, 0.521);
+    background-color: rgba(99, 201, 52, 0.521);
     height: 100%;
     border-radius: 50px;
     text-align: center;
     height: 400px;
     margin-bottom: 40px;
 }
+#div2, #div3{
+    background-color: rgba(99, 201, 52, 0.521);
+    border-radius: 50px;
+    text-align: center;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+/* -----------------------LOGIN----------------- */
 .login_link{
     color: rgb(90, 231, 224);
 }
@@ -44,14 +53,8 @@ body{
 }
 
 
-/* ---------------------------------------------------------------------------CAROUSEL--DIV2------------------------------------------------------------------ */
-#div2, #div3{
-    background-color: rgba(66, 12, 216, 0.521);
-    border-radius: 50px;
-    text-align: center;
-    height: 400px;
-    margin-bottom: 40px;
-}
+/* ---------------------------------------------------------------------------CAROUSEL-------------------------------------------------------------------- */
+
 .carousel{
     max-width:300px;
     max-height:300px;
@@ -62,9 +65,9 @@ body{
     margin-left: 130px;
 }
 
-/* ---------------------------------------------------------------------------CAROUSEL--TELA2------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------------CAROUSEL--TELA2--TELA DE CADASTRO---------------------------------------------------------------- */
 
-.carousel_tela_2{
+.carousel_cadastro{
     max-width:250px;
     max-height:250px;
     width: auto;
@@ -78,27 +81,37 @@ body{
 /* ----------------------------------------------------------------------MODALS------------------------------------------------------------- */
 
 .modal{
-    background-color: rgba(66, 12, 216, 0.521);
+    background-color: rgba(99, 201, 52, 0.521);
+}
+.modal-header{
+    background-color: rgb(0, 72, 12);
+    color: white;
 }
 .modal-body{
-    background-color: black;
+    background-color: rgb(99, 201, 52);
+}
+.modal-footer{
+    background-color: rgb(0, 72, 12);
+    color: white;
 }
 label{
     color: white;
 }
 /* ----------------------------------------------------------------------FOOTER----------------------------------------------------------------------- */
 
-
+.footer{
+    background-color: rgba(99, 201, 52, 0.521);;
+}
 #form_search{
     position: relative;
     left: 155%;
 }
 #input_search{
-    background-color: rgb(227, 236, 241);
     border-bottom-right-radius: 50px;
 }
 #button_search{
     border-top-left-radius: 50px;
+    background-color: rgb(0, 72, 12);
 }
 #cps{
     max-width:300px;
