@@ -1,3 +1,5 @@
+<!-- Jorge Luis; Matheus Vedovelli; Vitória Daniela -->
+
 <!-- 
     NÃO TENHO NOÇÃO ALGUMA DE DESIGN, RESSALTO QUE AS CORES NÃO SÃO DEFINITIVAS
     AS IMAGENS DE LOGO E DOS CARROUSSÉIS FORAM ESCOLHIDAS SOMENTE PARA PREENCHER CONTEÚDOS
@@ -38,26 +40,24 @@ A IDÉIA DO CARROUSEL É OFERECER AO USUÁRIO ATRAVÉS DE IMAGENS SIMPLES OS SER
                  <!-- -------------------------------------div1------------------------------------------ -->
 
                 <div class="col-md-3 div1" id="div1">
-                    <button class="btn-outline-warning btn" data-toggle="modal" data-target="#modal_2">Indicar um Dependente</button>
+                    <button class="btn-outline-light btn" data-toggle="modal" data-target="#modal_2">Indicar um Dependente</button>
                    </div>
 
                    <div class="col-md-1"></div>
 
-                    <!-- -------------------------------------div2------------------------------------------ -->
+                <!-- -------------------------------------div2------------------------------------------ -->
 
                    <div class="col-md-3 div1" id="div2">
                     
-                    <button class="btn-outline-warning btn" data-toggle="modal" data-target="#modal_3">??????????</button>
+                    <button class="btn-outline-light btn" data-toggle="modal" data-target="#modal_3">Você precisa de Ajuda?</button>
                    </div>
                    
                 <div class="col-md-1"></div>
                 
-                 <!-- -------------------------------------div3------------------------------------------ -->
+                <!-- -------------------------------------div3------------------------------------------ -->
 
                 <div class="col-md-3" id="div3">
-                    <div class="carousel carousel_tela_2 slide" data-ride="carousel">
-                        
-                    </div>
+
                     <button class="btn-outline-light btn" data-toggle="modal" data-target="#modal">Ajudar um Amigo</button>
                 </div>
             </div>
@@ -91,7 +91,7 @@ A IDÉIA DO CARROUSEL É OFERECER AO USUÁRIO ATRAVÉS DE IMAGENS SIMPLES OS SER
                 </ul>
             </div>
         </nav>
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------MODAL1 DEPENDENTE------------------------------------------------------------------ -->
         <div class="modal fade" id="modal" tabindex="1" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -163,12 +163,12 @@ A IDÉIA DO CARROUSEL É OFERECER AO USUÁRIO ATRAVÉS DE IMAGENS SIMPLES OS SER
             </div>
         </div>
 
-<!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -----------------------------------------------------------------------------MODAL2 AJUDA PARA O USUARIO--------------------------------------------------------------- -->
         <div class="modal fade" id="modal_2" tabindex="1" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4>Cadastro de Dependente</h4>
+                        <h4>Do que você necessita no momento?</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="fechar">
                             &times;
                         </button>
@@ -227,6 +227,55 @@ A IDÉIA DO CARROUSEL É OFERECER AO USUÁRIO ATRAVÉS DE IMAGENS SIMPLES OS SER
                                       <span class="input-group-text">Digite:</span>
                                     </div>
                                     <textarea class="form-control" aria-label="With textarea" placeholder="Descreva as dificuldades de seu amigo."></textarea>
+                                  </div>
+                            </fieldset>
+                        </form>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secundary" type="button" data-dismiss="modal" aria-label="fechar">Cancelar</button>
+                        <button class="btn btn-warning" type="submit">Terminar Cadastro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- ----------------------------------------------------------------MODAL3 INDICAR UM AMIGO PARA SER AJUDADO--------------------------------------------------------------------------- -->
+        <div class="modal fade" id="modal_3" tabindex="1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Cadastro de Dependente</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="fechar">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <fieldset>
+                                <legend style="color: white;">Explique para nós do que precisa</legend>
+                                
+
+                                
+                                
+
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Categoria</span>                                           
+                                    </div>
+                                    <select name="" id="" class="form-control">
+                                        <option value="0">Escolha uma categoria que se enquadre em suas necessidades:</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group">
+                                    <div class="input-group-prepend" data-toggle="tooltip" data-placement="top">
+                                      <span class="input-group-text">Digite:</span>
+                                    </div>
+                                    <textarea class="form-control" aria-label="With textarea" placeholder="Descreva em poucas palavras o que precisa"></textarea>
                                   </div>
                             </fieldset>
                         </form>
